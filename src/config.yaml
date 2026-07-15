@@ -1,0 +1,40 @@
+site:
+  name: Chocolate Fund
+  site: 'https://chocolatefund.com'
+  base: '/'
+  trailingSlash: false
+
+  googleSiteVerificationId: ''
+
+# Default SEO metadata
+metadata:
+  title:
+    default: Chocolate Fund
+    template: '%s — Chocolate Fund'
+  description: 'Welcome to Chocolate Fund. A delicious way to support your favorite causes!'
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: Chocolate Fund
+    images:
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
+    type: website
+# Twitter disabled (template artifact removed)
+
+i18n:
+  language: en
+  textDirection: ltr
+
+# Apps - Chocolate Fund site structure (no blog template docs)
+apps: {}
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null # or "G-XXXXXXXXXX"
+
+ui:
+  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
