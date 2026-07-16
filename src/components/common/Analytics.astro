@@ -1,7 +1,15 @@
 ---
-import { ANALYTICS } from 'astrowind:config';
+// Inline ANALYTICS config instead of astrowind:config
+const ANALYTICS = {
+  vendors: {
+    googleAnalytics: {
+      id: null, // set to "G-XXXXXXXXXX" to enable
+      partytown: false,
+    },
+  },
+};
 
-const id = ANALYTICS?.vendors?.googleAnalytics?.id ? String(ANALYTICS.vendors.googleAnalytics.id) : '';
+const id = ANALYTICS.vendors.googleAnalytics?.id ? String(ANALYTICS.vendors.googleAnalytics.id) : '';
 const partytown = !!ANALYTICS?.vendors?.googleAnalytics?.partytown;
 const scriptType = partytown ? 'text/partytown' : undefined;
 ---

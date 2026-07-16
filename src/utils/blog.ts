@@ -2,8 +2,20 @@ import type { PaginateFunction } from 'astro';
 import { getCollection, render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import type { Post, Taxonomy } from '~/types';
-import { APP_BLOG } from 'astrowind:config';
-import { cleanSlug, trimSlash, BLOG_BASE, POST_PERMALINK_PATTERN, CATEGORY_BASE, TAG_BASE } from './permalinks';
+
+// Inline SITE config instead of astrowind:config
+const SITE = {
+  name: 'The Chocolate Future',
+  site: 'https://chocolatefund.com',
+  base: '/',
+  trailingSlash: false,
+};
+const BLOG_BASE = '/blog';
+const POST_PERMALINK_PATTERN = '/%slug%';
+const CATEGORY_BASE = '/category';
+const TAG_BASE = '/tag';
+
+import { cleanSlug, trimSlash } from './permalinks';
 
 const generatePermalink = async ({
   id,
@@ -113,20 +125,31 @@ const load = async function (): Promise<Array<Post>> {
 
 let _posts: Array<Post>;
 
-/** */
-export const isBlogEnabled = APP_BLOG.isEnabled;
-export const isRelatedPostsEnabled = APP_BLOG.isRelatedPostsEnabled;
-export const isBlogListRouteEnabled = APP_BLOG.list.isEnabled;
-export const isBlogPostRouteEnabled = APP_BLOG.post.isEnabled;
-export const isBlogCategoryRouteEnabled = APP_BLOG.category.isEnabled;
-export const isBlogTagRouteEnabled = APP_BLOG.tag.isEnabled;
+/**
+ * Simple static config - no blog enabled for this simple landing page
+ */
+const BLOG_DISABLED = {
+  isEnabled: false,
+  isRelatedPostsEnabled: false,
+  list: { isEnabled: false },
+  post: { isEnabled: false },
+  category: { isEnabled: false },
+  tag: { isEnabled: false },
+};
 
-export const blogListRobots = APP_BLOG.list.robots;
-export const blogPostRobots = APP_BLOG.post.robots;
-export const blogCategoryRobots = APP_BLOG.category.robots;
-export const blogTagRobots = APP_BLOG.tag.robots;
+export const isBlogEnabled = BLOG_DISABLED.isEnabled;
+export const isRelatedPostsEnabled = BLOG_DISABLED.isRelatedPostsEnabled;
+export const isBlogListRouteEnabled = false;
+export const isBlogPostRouteEnabled = false;
+export const isBlogCategoryRouteEnabled = false;
+export const isBlogTagRouteEnabled = false;
 
-export const blogPostsPerPage = APP_BLOG?.postsPerPage;
+export const blogListRobots = undefined;
+export const blogPostRobots = undefined;
+export const blogCategoryRobots = undefined;
+export const blogTagRobots = undefined;
+
+export const blogPostsPerPage = 10; // default if ever used
 
 /** */
 export const fetchPosts = async (): Promise<Array<Post>> => {

@@ -1,5 +1,5 @@
 site:
-  name: Chocolate Fund
+  name: The Chocolate Future
   site: 'https://chocolatefund.com'
   base: '/'
   trailingSlash: false
@@ -9,16 +9,16 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Chocolate Fund
-    template: '%s — Chocolate Fund'
-  description: 'Welcome to Chocolate Fund. A delicious way to support your favorite causes!'
+    default: The Chocolate Future
+    template: '%s — The Chocolate Future'
+  description: 'The Chocolate Future connects diaspora capital to Ghana\'s cocoa-processing industry, creating jobs and strengthening local value chains.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Chocolate Fund
+    site_name: The Chocolate Future
     images:
-      - url: '~/assets/images/default.png'
+      - url: '../hero.jpg'
         width: 1200
         height: 628
     type: website

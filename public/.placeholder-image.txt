@@ -1,2 +1,0 @@
-This path is reserved for Chocolate Fund banner images.
-Use assets/images/chocolate-banner.png instead.

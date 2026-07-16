@@ -1,8 +1,14 @@
 import slugify from 'limax';
 
-import { SITE, APP_BLOG } from 'astrowind:config';
+const SITE = {
+  name: 'The Chocolate Future',
+  site: 'https://chocolatefund.com',
+  base: '/',
+  trailingSlash: false,
+};
 
-import { trim } from '~/utils/utils';
+// Simple trim utility
+const trim = (str = '', ch = '/') => str.split('').slice(0, -1).join('') || str;
 
 export const trimSlash = (s: string) => trim(trim(s, '/'));
 const createPath = (...params: string[]) => {
@@ -21,11 +27,9 @@ export const cleanSlug = (text = '') =>
     .map((slug) => slugify(slug))
     .join('/');
 
-export const BLOG_BASE = cleanSlug(APP_BLOG?.list?.pathname);
-export const CATEGORY_BASE = cleanSlug(APP_BLOG?.category?.pathname);
-export const TAG_BASE = cleanSlug(APP_BLOG?.tag?.pathname) || 'tag';
-
-export const POST_PERMALINK_PATTERN = trimSlash(APP_BLOG?.post?.permalink || `${BLOG_BASE}/%slug%`);
+export const CATEGORY_BASE = 'category';
+export const TAG_BASE = 'tag';
+export const POST_PERMALINK_PATTERN = '/%slug%';
 
 /** */
 export const getCanonical = (path = ''): string | URL => {

@@ -1,6 +1,8 @@
 ---
 import { getBlogPermalink } from '~/utils/permalinks';
-import { I18N } from 'astrowind:config';
+
+// Inline I18N config instead of astrowind:config
+const I18N = { textDirection: 'ltr' };
 import Button from '~/components/ui/Button.astro';
 import CustomIcon from '~/components/ui/CustomIcon.astro';
 

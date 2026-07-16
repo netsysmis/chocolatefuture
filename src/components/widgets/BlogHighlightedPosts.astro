@@ -1,5 +1,6 @@
 ---
-import { APP_BLOG } from 'astrowind:config';
+// Inline APP_BLOG config - blog is disabled for this simple landing page
+const APP_BLOG = { isEnabled: false, list: { isEnabled: false } };
 
 import Grid from '~/components/blog/Grid.astro';
 
