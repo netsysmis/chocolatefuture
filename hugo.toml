@@ -1,0 +1,13 @@
+baseURL = "https://netsysmis.github.io/chocolatefuture/"
+languageCode = "en-us"
+title = "The Chocolate Future"
+
+[markup.goldmark]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+disableKinds = ["taxonomy", "term"]
+contentDir = "content"
+
+[build]
+  publishDir = "public"
