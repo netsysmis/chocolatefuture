@@ -1,64 +1,121 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Chocolate Future - Ghana's Cocoa Value Chain Initiative</title><style>html{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:#333;}body{margin:0;background:#f8f5f2;padding-bottom:2rem;}header{background:#3e2723;color:#fff;padding:1rem 0;position:sticky;top:0;z-index:100;}nav{max-width:960px;margin:0 auto;display:flex;gap:1.5rem;font-weight:500;}a{color:#f57c00;text-decoration:none;}main{max-width:960px;margin:0 auto;padding:2rem 1rem;}</style></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>The Chocolate Future - Ghana's Cocoa Value Chain Initiative</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(180deg,#3e2723 0%,#5D4037 100%); min-height: 100vh; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+        header { background: #2c1810; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+        nav { display: flex; justify-content: center; gap: 1.5rem; font-size: 1.1rem; }
+        nav a { color: #f57c00; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.3s; }
+        nav a:hover { background: rgba(245, 124, 0, 0.2); }
+        #contact-btn { background: #f57c00; color: white !important; font-weight: 600; }
+        .hero { padding: 8rem 1rem; text-align: center; background: linear-gradient(180deg,#3e2723 0%,#5D4037 100%); color: #f0eadd; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; color: #f57c00; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .hero p { font-size: 1.8rem; opacity: 0.9; max-width: 800px; margin: 0 auto; }
+        section { padding: 6rem 2rem; scroll-margin-top: 4rem; }
+        #problem, #join { background: white; }
+        #impact { background: linear-gradient(180deg,#fafafa 0%,#f5f0eb 100%); }
+        h1 { font-size: 2.5rem; margin-bottom: 1.5rem; text-align: center; color: #3e2723; }
+        p { max-width: 800px; margin: 0 auto 1rem; text-align: center; }
+        .impact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 700px; margin: 3rem auto; }
+        .stat-card { background: white; padding: 2rem; border-radius: 8px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .stat-card strong { font-size: 3rem; display: block; color: #3e2723; margin-bottom: 0.5rem; }
+        footer { background: #2c1810; color: #f57c00; text-align: center; padding: 3rem 1rem; }
+        .social-links { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; }
+    </style>
+</head>
+<body>
 <header><div style="max-width:960px;margin:0 auto;display:flex;align-items:center;gap:2rem;padding:0 1rem;height:70px">
-    <div style="color:#f57c00;font-size:1.4rem;font-weight:700" onclick="location.href='/'">The Chocolate Future</div>
+    <div style="color:#f57c00;font-size:1.4rem;font-weight:700" onclick="location.href='/'"><span>🚀</span>&nbsp;&nbsp;The Chocolate Future</div>
     <nav style="display:flex;gap:1.5rem;font-size:.95rem">
         <a href="#problem">About</a>
         <a href="#impact">Impact</a>
         <a href="#join">Join Us</a>
-        <a href="#invest" id="contact-btn" style="background:#f57c00;color:#fff;padding:0.5rem 1rem;border-radius:4px;font-weight:600">Invest with The Chocolate Future</a>
     </nav>
+    <div><span style="background:#f57c00;color:white;padding:0.3rem 0.8rem;border-radius:4px;font-size:0.85rem;margin-left:auto;">Donations: 91%+ to Africa</span></div>
 </div></header>
 
-<main>
-<section class="hero-section" style="position:relative;overflow:hidden;background:#3e2723;color:#f5e6d3;padding:6rem 2rem;text-align:center">
-    <h1 style="color:#f57c00;font-size:4rem;margin:0;font-weight:800">Creating Value from Africa's Heritage</h1>
-    <p style="font-size:2.2rem;margin-top:1.5rem;font-weight:600">Through Local Processing and Diaspora Investment</p>
+<section class="hero">
+    <h1>Creating Value from Africa's Heritage<br>Through Local Processing & Diaspora Investment</h1>
+    <p style="font-size:1.5rem;max-width:800px;margin-top:2rem;">Ghana and Cote d'Ivoire produce over 60% of the world's cocoa, yet capture only 2-4% of the value.</p>
 </section>
 
-<section id="problem" style="padding:4rem 2rem;background:#fff;scroll-margin-top:4rem">
-    <h1 style="color:#3e2723;font-size:2.5rem;text-align:center;margin-bottom:1.5rem">About</h1>
-    <p style="color:#4e342e;font-size:1.1rem;line-height:1.8;text-align:left">
-        Ghana and Cote d'Ivoire produce over 60% of the world's cocoa, yet capture only 2-4% of the value. 
-        The Chocolate Future bridges this gap by connecting diaspora capital to Ghana's local processing agenda,
-        creating jobs, strengthening industrial capacity, and building a more resilient cocoa economy.
-    </p>
+<section id="problem" style="padding:0;background:#f5f5f5;scroll-margin-top:4rem">
+    <h1>Our Impact at a Glance</h1>
+    <div class="impact-grid">
+        <div class="stat-card"><strong>60%+</strong><span>Global Cocoa Share</span></div>
+        <div class="stat-card"><strong>~3%</strong><span>Value Captured by Africa</span></div>
+        <div class="stat-card"><strong>50%</strong><span>Target: Local Processing</span></div>
+        <div class="stat-card"><strong>2</strong><span>Countries Supported</span></div>
+    </div>
 </section>
 
-<section id="impact" style="padding:4rem 2rem;background:#fafafa">
-    <h1 style="color:#3e2723;font-size:2.5rem;text-align:center;margin-bottom:1.5rem">Our Impact at a Glance</h1>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;max-width:700px;margin:0 auto;">
-        <div style="text-align:center;padding:2rem;background:#fff;border-radius:8px">
-            <strong style="font-size:2.5rem;display:block;margin-bottom:0.5rem">60%+</strong> Global Cocoa Share
+<section id="problem">
+    <h1>The Structural Gap</h1>
+    <p style="font-size:1.2rem">Cocoa-producing countries export raw beans while the most profitable parts of the value chain—grinding, refining, manufacturing, branding, and retail—are concentrated elsewhere.</p>
+    <p><strong>Our Solution:</strong> Move beyond production alone toward local processing and value-added manufacturing in Ghana.</p>
+</section>
+
+<section id="impact">
+    <h1>Ghana's Policy Response</h1>
+    <p><strong>50% of cocoa beans be processed locally starting 2026/27 crop season.</strong></p>
+    <p>This policy creates a timely opening for investment into processing infrastructure, working capital, and market development that can transform Ghana from a raw-bean exporter into a stronger participant in higher-value segments of the cocoa economy.</p>
+</section>
+
+<section id="join">
+    <h1 style="color:#f57c00">The Diaspora as the 17th Region</h1>
+    <p>Ghana's "17th Region" concept mobilizes diaspora participation in national development. Treated as a formal partner—not just a symbolic audience—the global African diaspora brings capital, expertise, and innovation to sectors like cocoa.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;max-width:900px;margin:3rem auto;">
+        <div style="background:#fff9f0;padding:2rem;border-radius:8px;text-align:center">
+            <h3 style="color:#f57c00;font-size:1.5rem;margin-bottom:1rem">Capital</h3>
+            <p>Diaspora investment in Ghana's cocoa-processing industry as a strategic vehicle for national development.</p>
         </div>
-        <div style="text-align:center;padding:2rem;background:#fff;border-radius:8px">
-            <strong style="font-size:2.5rem;display:block;margin-bottom:0.5rem">~3%</strong> Value Captured by Africa
+        <div style="background:#fff9f0;padding:2rem;border-radius:8px;text-align:center">
+            <h3 style="color:#f57c00;font-size:1.5rem;margin-bottom:1rem">Expertise</h3>
+            <p>Skills transfer and technical knowledge to strengthen Ghana's industrial capacity in cocoa manufacturing.</p>
         </div>
-        <div style="text-align:center;padding:2rem;background:#fff;border-radius:8px">
-            <strong style="font-size:2.5rem;display:block;margin-bottom:0.5rem">50%</strong> Target: Local Processing
-        </div>
-        <div style="text-align:center;padding:2rem;background:#fff;border-radius:8px">
-            <strong style="font-size:2.5rem;display:block;margin-bottom:0.5rem">2</strong> Countries Supported
+        <div style="background:#fff9f0;padding:2rem;border-radius:8px;text-align:center">
+            <h3 style="color:#f57c00;font-size:1.5rem;margin-bottom:1rem">Innovation</h3>
+            <p>Business networks and market access to create sustainable value chains anchored in Ghana.</p>
         </div>
     </div>
 </section>
 
-<section id="join" style="padding:4rem 2rem;background:#3e2723;color:#f0eadd">
-    <h1 style="color:#f57c00;font-size:2.5rem;margin-bottom:1rem;text-align:center">Join Us</h1>
-    <p style="font-size:1.1rem;line-height:1.7;text-align:center">
-        The Chocolate Future offers a credible platform for investment that is economically strategic, 
-        socially meaningful, and nationally aligned—with Ghana as our home.
-    </p>
+<section id="problem" style="padding:6rem 2rem;background:#f5f5f5">
+    <h1>Our Impact Areas</h1>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;">
+        <div style="background:#fff;padding:2.5rem;border-radius:8px">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="#3e2723"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <h3 style="margin:1rem 0 0.5rem;font-size:1.4rem">Processing Infrastructure</h3>
+            <p>Investment in facilities for grinding, refining, and manufacturing higher-value cocoa products within Ghana.</p>
+        </div>
+        <div style="background:#fff;padding:2.5rem;border-radius:8px">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="#3e2723"><path d="M12 2c-5 0-8 3-8 8v7h16v-7c0-5-3-8-8-8zM6 10h12v7H6z"/></svg>
+            <h3 style="margin:1rem 0 0.5rem;font-size:1.4rem">Local Employment</h3>
+            <p>Creating jobs for Ghanaian workers in processing plants and related industries across cocoa regions.</p>
+        </div>
+        <div style="background:#fff;padding:2.5rem;border-radius:8px">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="#3e2723"><path d="M12 2L4 19h3v5h6v-5h3l-8-17zM12 8c2.5 0 4.5 2.5 4.5 5.5s-2 5.5-4.5 5.5-4.5-2.5-4.5-5.5S9.5 8 12 8z"/></svg>
+            <h3 style="margin:1rem 0 0.5rem;font-size:1.4rem">Skills Development</h3>
+            <p>Training programs transferring technical expertise from diaspora partners to local workforce.</p>
+        </div>
+    </div>
 </section>
 
-<footer style="background:#1a2530;color:#f57c00;text-align:center;padding:3rem 1rem;border-top:1px solid rgba(245,124,0,.2)">
-    <p style="font-size:1.1rem;margin-bottom:1rem;">The Chocolate Future</p>
-    <p style="margin-top:1rem;font-size:.95rem;color:#e8dcc6">Interested in partnering or investing?</p>
-    <a href="https://formspree.io/f/chocolatefuture" target="_blank" rel="noopener noreferrer" 
-       style="display:inline-block;background:#f57c00;color:#fff;padding:0.8rem 2rem;border-radius:4px;text-decoration:none;font-weight:600;margin-top:1rem">Contact Us</a>
-    <p style="margin-top:2rem;font-size:.85rem;color:#a69682">&copy; 2026 The Chocolate Future. Delaware &middot; Ghana</p>
+<footer>
+    <h2 style="font-size:2rem;margin-bottom:1rem;">The Chocolate Future</h2>
+    <p style="color:#ccc;font-size:1.1rem">Creating sustainable value chains that benefit entire communities</p>
+    <div class="social-links">
+        <a href="#problem" style="color:#f57c00;text-decoration:none;padding:0.8rem 1.5rem;border-radius:4px;">About</a>
+        <a href="#impact" style="color:#f57c00;text-decoration:none;padding:0.8rem 1.5rem;border-radius:4px;">Impact</a>
+    </div>
+    <p style="margin-top:2rem;color:#666;font-size:0.95rem">&copy; 2026 The Chocolate Future. Delaware &middot; Ghana</p>
 </footer>
 
-<script>const observerOptions={root:null,rootMargin:'0px',threshold:0.15};
-const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible');})},observerOptions);
-document.querySelectorAll('.hero-section').forEach(section=>observer.observe(section));</script>
-</body></html>
+<script>(function(){const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>e.isIntersecting&&document.documentElement.classList.add('fade-in'))});observer.observe(document.querySelector('.hero'));observer.observe(document.querySelector('#problem'));window.onload=()=>window.scrollTo({top:0,behavior:'smooth'});})();</script>
+</body>
+</html>
